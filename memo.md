@@ -151,3 +151,25 @@ export default defineConfig({
 });
 
 ```
+# react-routerの設定
+```
+npm install react-router-dom
+```
+
+App.tsxに追加
+```ts
+const App = () => (
+  <div className="App">
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route
+          index
+          element={<Index />}
+        />
+      </Routes>
+    </BrowserRouter>
+  </div>
+);
+
+```
