@@ -1,15 +1,10 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import { Header } from './component/Header'
+import { Header } from 'components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  )
-}
+const App = () => (
+  <div className="App">
+    <Header />
+  </div>
+);
 
-export default App
+export default App;
